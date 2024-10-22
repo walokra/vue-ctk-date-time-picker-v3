@@ -536,7 +536,7 @@
   @media screen and (max-width: 415px) {
     .datepicker-container {
       width: 100%;
-      &:not(.inline) {
+      :not(.inline) {
         .datepicker-controls {
           height: 36px !important;
         }

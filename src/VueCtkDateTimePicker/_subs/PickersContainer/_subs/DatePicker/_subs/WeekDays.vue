@@ -32,7 +32,7 @@
     }
   }
   @media screen and (max-width: 415px) {
-    &:not(.inline) {
+    :not(.inline) {
       .datepicker-week {
         height: 21px !important;
       }

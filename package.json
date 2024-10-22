@@ -1,6 +1,6 @@
 {
   "name": "vue-ctk-date-time-picker",
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.0-alpha.1",
   "description": "A vue component for select date & time (by Chronotruck)",
   "author": "Louis Mazel <loic.mazuel@chronotruck.com>",
   "scripts": {
@@ -38,20 +38,20 @@
     "@vue/test-utils": "^2.0.0-beta.7",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^26",
     "core-js": "^3.6.5",
-    "eslint": "^7.0.0-rc.0",
+    "eslint": "<7.0.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0-beta.4",
-    "node-sass": "^4.14.1",
+    "sass": "^1.80.3",
     "nuxt": "^2.9.2",
     "sass-loader": "^10.0.4",
     "typescript": "^4.0.3",
     "vue-cli-plugin-webpack-bundle-analyzer": "^2.0.0",
-    "vue-jest": "^5.0.0-alpha.5"
+    "vue-jest": "^5.0.0-alpha.10"
   },
   "postcss": {
     "plugins": {
@@ -67,8 +67,8 @@
     "url": "https://github.com/chronotruck/vue-ctk-date-time-picker/issues"
   },
   "engines": {
-    "node": ">= 6.0.0",
-    "npm": ">= 3.0.0"
+    "node": ">= 6 || <= 16",
+    "npm": ">= 3 || <= 8"
   },
   "files": [
     "tsconfig.json",
