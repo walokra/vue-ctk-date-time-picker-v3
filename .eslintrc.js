@@ -50,7 +50,7 @@ module.exports = {
     'vue/this-in-template': 'error',
     'vue/script-indent': 'error',
     'vue/v-slot-style': 'off',
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-console': 'off'
   },
 
   parserOptions: {
