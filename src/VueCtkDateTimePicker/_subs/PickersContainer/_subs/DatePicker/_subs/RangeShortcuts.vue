@@ -60,8 +60,11 @@
       }
     },
     watch: {
-      customShortcuts () {
-        this.init()
+      customShortcuts: {
+        deep: true,
+        handler () {
+          this.init()
+        }
       }
     },
     mounted () {
