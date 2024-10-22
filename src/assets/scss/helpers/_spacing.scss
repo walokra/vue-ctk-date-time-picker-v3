@@ -1,4 +1,5 @@
-@import "./variables/index.scss";
+@use 'sass:list';
+@use "variables/index.scss" as variables;
 
 @function set-var-class($var) {
   @if ($var == 'margin') {
@@ -9,11 +10,11 @@
 }
 
 // Font-size
-@each $pm in $pms {
-  @each $size in $spacing-sizes {
+@each $pm in variables.$pms {
+  @each $size in variables.$spacing-sizes {
     $p: set-var-class($pm);
 
-    $i: index($spacing-sizes, $size);
+    $i: list.index(variables.$spacing-sizes, $size);
     .lm-#{$p}r-#{$i} {
       #{$pm}-right: #{$size} !important;
     }

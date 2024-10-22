@@ -344,7 +344,7 @@
 </script>
 
 <style lang="scss">
-  @import "./assets/main.scss";
+  @use "./assets/main.scss";
   .date-time-picker {
     width: 100%;
     margin: 0 auto;

@@ -492,7 +492,9 @@
 </script>
 
 <style lang="scss">
-  @import "./assets/scss/main.scss";
+  @use "sass:color";
+
+  @use "./assets/scss/main.scss";
   html, body, #app, #vueCtkDateTimePicker {
     margin: 0;
     min-height: 100%;
@@ -504,7 +506,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     &.dark {
-      background-color: darken(#424242, 20%);
+      background-color: color.adjust(#424242, $lightness: -20%)
       header {
         color: rgba(255, 255, 255, 0.70);
       }

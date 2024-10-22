@@ -418,6 +418,8 @@
 </script>
 
 <style lang="scss" scoped>
+  @use "sass:color";
+
   .time-picker-column::-webkit-scrollbar {
     display: none;
   }
@@ -550,7 +552,7 @@
       }
     }
     .timepicker-container.is-dark {
-      border-color: lighten(#424242, 20%);
+      border-color: color.adjust(#424242, $lightness: 20%);
     }
   }
 </style>

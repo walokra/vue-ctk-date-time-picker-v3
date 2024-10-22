@@ -65,6 +65,8 @@
 </script>
 
 <style lang="scss" scoped>
+  @use "sass:color";
+
   .custom-button {
     padding: 0px 20px;
     position: relative;
@@ -133,7 +135,7 @@
     &.is-dark {
       background-color: #424242;
       &.with-border {
-        border-color: lighten(#424242, 20%);
+        border-color: color.adjust(#424242, $lightness: 20%);
       }
       svg {
         fill: white !important;

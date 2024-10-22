@@ -1,4 +1,6 @@
-@import "./helpers/index.scss";
+@use "sass:color";
+
+@use "helpers/index.scss";
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -29,7 +31,7 @@
     box-shadow: 0 0 8px 0 rgba(232,237,250,.6), 0 2px 4px 0 rgba(232,237,250,.5);
   }
   &.dark {
-    background-color: darken(#424242, 10%);
+    background-color: color.adjust(#424242, $lightness: -10%);
     color: #FFF;
     textarea {
       background: #424242;
@@ -40,7 +42,7 @@
 .dark {
   .component-container, .component {
     border: 1px solid #424242;
-    background-color: darken(#424242, 10%);
+    background-color: color.adjust(#424242, $lightness: -10%);
     &:hover {
       box-shadow: 0 0 8px 0 rgba(0,0,0,.6), 0 2px 4px 0 rgba(0,0,0,.5);
     }
@@ -94,7 +96,7 @@
     box-shadow: 0 0 8px 0 rgba(232,237,250,.6), 0 2px 4px 0 rgba(232,237,250,.5);
   }
   &.dark {
-    background-color: darken(#424242, 10%);
+    background-color: color.adjust(#424242, $lightness: -10%);
     color: #FFF;
     textarea {
       background: #424242;
@@ -105,7 +107,7 @@
 .dark {
   .component-container, .component {
     border: 1px solid #424242;
-    background-color: darken(#424242, 10%);
+    background-color: color.adjust(#424242, $lightness: -10%);
     &:hover {
       box-shadow: 0 0 8px 0 rgba(0,0,0,.6), 0 2px 4px 0 rgba(0,0,0,.5);
     }

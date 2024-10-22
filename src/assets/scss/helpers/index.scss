@@ -1,11 +1,11 @@
-@import "./_flex.scss";
-@import "./_fonts.scss";
-@import "./_container-size.scss";
-@import "./_spacing.scss";
-@import "./_btn.scss";
-@import "./_animation.scss";
-@import "./_typo.scss";
-@import "./_width_height.scss";
+@use "_flex.scss";
+@use "_fonts.scss";
+@use "_container-size.scss";
+@use "_spacing.scss";
+@use "_btn.scss";
+@use "_animation.scss";
+@use "_typo.scss";
+@use "_width_height.scss";
 
 *, *::before, *::after {
   box-sizing: border-box;

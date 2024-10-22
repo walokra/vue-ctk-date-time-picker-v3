@@ -93,6 +93,8 @@
 </script>
 
 <style lang="scss" scoped>
+  @use "sass:color";
+
   .datepicker-buttons-container {
     padding: 5px;
     border-top: 1px solid #EAEAEA;
@@ -165,7 +167,7 @@
     &.is-dark, &.is-dark .datepicker-button {
       background-color: #424242;
       &:not(.now) {
-        border-color: lighten(#424242, 20%);
+        border-color: color.adjust(#424242, $lightness: 20%);
       }
       svg {
         fill: white !important;

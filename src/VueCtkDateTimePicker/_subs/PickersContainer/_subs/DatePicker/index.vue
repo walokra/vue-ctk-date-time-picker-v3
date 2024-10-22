@@ -331,6 +331,8 @@
 </script>
 
 <style lang="scss" scoped>
+  @use "sass:color";
+
   .datepicker-container {
     width: 260px;
     padding: 0 5px;
@@ -514,14 +516,14 @@
           color: #FFF;
         }
         &.disabled .datepicker-day-text {
-          color: lighten(#424242, 20%);
+          color: color.adjust(#424242, $lightness: 20%)
         }
       }
       .datepicker-label {
         color: white;
       }
       .text-muted {
-        color: lighten(#424242, 40%) !important;
+        color: color.adjust(#424242, $lightness: 40%) !important;
       }
       .datepicker-button {
         svg {
@@ -529,7 +531,7 @@
         }
       }
       .datepicker-today {
-        background-color: darken(#424242, 10%) !important;
+        background-color: color.adjust(#424242, $lightness: -10%)!important;
       }
     }
   }

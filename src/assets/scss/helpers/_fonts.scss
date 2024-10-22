@@ -1,14 +1,14 @@
-@import "./variables/index.scss";
+@use "variables/index.scss" as variables;
 
 // Font-size
-@each $size in $font-sizes {
+@each $size in variables.$font-sizes {
   .lm-fs-#{$size} {
     font-size: #{$size}px !important;
   }
 }
 
 // Font-weight
-@each $weight in $font-weights {
+@each $weight in variables.$font-weights {
   .lm-fw-#{$weight} {
     font-weight: #{$weight};
   }

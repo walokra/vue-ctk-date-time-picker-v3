@@ -189,6 +189,8 @@
 </script>
 
 <style lang="scss" scoped>
+  @use "sass:color";
+
   .shortcuts-container {
     width: 140px;
     max-width: 140px;
@@ -201,7 +203,7 @@
       width: 100%;
     }
     &.is-dark {
-      border-color: lighten(#424242, 20%);
+      border-color: color.adjust(#424242, $lightness: 20%);
     }
   }
 
@@ -229,7 +231,7 @@
     }
 
     .shortcuts-container.is-dark {
-      border-color: lighten(#424242, 20%);
+      border-color: color.adjust(#424242, $lightness: 20%);
     }
   }
 </style>
