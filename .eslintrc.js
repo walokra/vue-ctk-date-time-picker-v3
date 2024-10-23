@@ -44,7 +44,7 @@ module.exports = {
       ],
       alphabetical: false
     }],
-    'vue/no-confusing-v-for-v-if': 'error',
+    'vue/no-use-v-if-with-v-for': 'error',
     'vue/no-v-html': 'error',
     'vue/order-in-components': 'error',
     'vue/this-in-template': 'error',
@@ -54,7 +54,7 @@ module.exports = {
   },
 
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: '@babel/eslint-parser'
   },
 
   overrides: [
