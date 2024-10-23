@@ -18,7 +18,7 @@
         <HeaderPicker
           v-if="!noHeader"
           :key="componentKey"
-          v-model="modelValue"
+          :model-value="modelValue"
           :color="color"
           :only-time="onlyTime"
           :format="format"
@@ -27,6 +27,7 @@
           :no-time="onlyDate"
           :dark="dark"
           :range="range"
+          @update:model-value="modelValue = $event"
         />
         <!--eslint-enable-->
         <div class="pickers-container flex">
