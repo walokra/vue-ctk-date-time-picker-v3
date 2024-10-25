@@ -1,4 +1,5 @@
 module.exports = {
+  preset: '@vue/cli-plugin-unit-jest',
   moduleFileExtensions: [
     'js',
     'jsx',
@@ -6,7 +7,7 @@ module.exports = {
     'vue'
   ],
   transform: {
-    '^.+\\.vue$': 'vue-jest',
+    '^.+\\.vue$': '@vue/vue3-jest',
     '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
     '^.+\\.jsx?$': 'babel-jest'
   },
@@ -17,7 +18,7 @@ module.exports = {
     'jest-serializer-vue'
   ],
   testMatch: [
-    '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
+    '**/tests/**/*.spec.[jt]s?(x)'
   ],
   testURL: 'http://localhost/'
 }
