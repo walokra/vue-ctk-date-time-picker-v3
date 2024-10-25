@@ -86,7 +86,9 @@
   import { directive as vClickOutside } from './directives/click-outside'
 
   import CustomInput from './_subs/CustomInput'
+  CustomInput.compatConfig = { MODE: 3 }
   import PickersContainer from './_subs/PickersContainer'
+  PickersContainer.compatConfig = { MODE: 3 }
 
   import props from './props'
 
@@ -121,6 +123,7 @@
   }
 
   export default {
+    compatConfig: { MODE: 3 },
     name: 'VueCtkDateTimePicker',
     components: {
       CustomInput,

@@ -100,9 +100,13 @@
   import moment from 'moment'
 
   import DatePicker from './_subs/DatePicker'
+  DatePicker.compatConfig = { MODE: 3 }
   import TimePicker from './_subs/TimePicker'
+  TimePicker.compatConfig = { MODE: 3 }
   import HeaderPicker from './_subs/HeaderPicker'
+  HeaderPicker.compatConfig = { MODE: 3 }
   import ButtonValidate from './_subs/ButtonValidate'
+  ButtonValidate.compatConfig = { MODE: 3 }
 
   import Month from '@/VueCtkDateTimePicker/modules/month'
 
